@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Modulos Inventarios || DDNE Inventory </title>
+    <style>
+        table, th, td {border: 1px solid rgb(10, 116, 26);}
+        .body { margin: 15px;padding: 20px;padding-left: 45px; background-image: url(Logo\ Ampliado\ DDNE.png);}
+        #head {border: solid 3px darkcyan; padding: 5px;}
+        #foot {background-color: rgb(11, 128, 128); height: 30px; color: white; text-align: right; padding: 20px;margin-right: 30px;}
+    </style>
+</head>
+<body class="body">
+    <div>
+        <div id="head">
+            <h2>|| Inventario Insumos ||</h2>
+        </div><hr>
+        <form action="">
+            <h3>Registro Insumo</h3> <br>
+            Id: <span style="font-size: medium; color: red; font-style: italic; text-decoration: underline;">Auto-Increment</span><br><br>
+            <label for="Consecutivo">Consecutivo</label>
+            <input type="text" id="Consecutivo" placeholder="Consecutivo"/><br><br>
+            Tipo Insumo
+            <select name="Tipo Insumo" id="T_insumo">
+                <option value="">Seleccione</option>
+                <option value="">Parafina</option>
+                <option value="">Papel</option>
+                <option value="">Rollo Carton</option>
+            </select><br><br>
+            <label for="Peso">Peso</label>
+            <input type="text" id="Peso" placeholder="Kg"><br><br>
+            Estado<select name="" id="">
+                <option value="">Seleccione</option>
+                <option value="">En Espera</option>
+                <option value="">Recibido</option>
+                <option value="">Cancelado</option>
+            </select><br><br>
+            <label for="Unds">Unidades</label>
+            <input type="text" id="Unds" placeholder="Cantidad"><br><br>
+            <label for="F.P">Fecha Planificada</label>
+            <input type="date" id="F.P"><br><br>
+            Fecha de Registro: <span style="font-size: medium; color: red; font-style: italic; text-decoration: underline;">Fecha de Sistema</span><br><br>
+            Proveedor<select name="Proveedor" id="P">
+                <option value="">Ninguna</option>
+                <option value="">Propandina S.A.S</option>
+                <option value="">Carvajal S.A.S</option>
+                <option value="">Solla S.A.S</option>
+            </select><br><br>
+            Usuario Activo:<span style="font-size: large; color: red; font-style: italic; text-decoration: underline;">User 1</span>&nbsp;&nbsp;
+            <button>Registrar Insumo</button>
+        </form>
+    </div>
+    <br><br><hr>
+
+    <div>
+        <caption>|\ Inventario Insumos /|</caption><br><br>
+        <table style="width: 1000px;">
+            <tr>
+
+                <th>id</th>
+                <th>Consecutivo</th>
+                <th>Tipo Insumo</th>
+                <th>Peso (Kg)</th>
+                <th>Estado</th>
+                <th>Unidades</th>
+                <th>Fecha Planificada</th>
+                <th>Fecha Registro</th>
+                <th>Proveedor</th>
+                <th>Usuario</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>PP3A0231046140</td>
+                <td>Papel</td>
+                <td>215</td>
+                <td>En espera</td>
+                <td>1</td>
+                <td>1/06/2023</td>
+                <td>26/05/2023</td>
+                <td>Propandina S.A.S</td>
+                <td>User 1</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>PP3A0231046285</td>
+                <td>Papel</td>
+                <td>205</td>
+                <td>Recibido</td>
+                <td>1</td>
+                <td>30/05/2023</td>
+                <td>17/05/2023</td>
+                <td>Propandina S.A.S</td>
+                <td>User 2</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>N/A</td>
+                <td>Parafina</td>
+                <td>25</td>
+                <td>Recibido</td>
+                <td>4</td>
+                <td>29/05/2023</td>
+                <td>20/05/2023</td>
+                <td>Carvajal S.A.S</td>
+                <td>User 1</td>
+            </tr>
+             <tr>
+                <td>1004</td>
+                <td>N/A</td>
+                <td>Rollo Carton</td>
+                <td>N/A</td>
+                <td>En Espera</td>
+                <td>100</td>
+                <td>05/06/2023</td>
+                <td>29/05/2023</td>
+                <td>Solla S.A.S</td>
+                <td>User 3</td>
+            </tr>
+        </table>
+    </div><br><br><hr><hr>
+    <!-- 2da Sección -->
+    <div>
+        <div id="head">
+            <h2>|| Inventario Produccion ||</h2>
+        </div><hr>
+        <form action="">
+            <h3>Registro de Produccion</h3> <br>
+            Id: <span style="font-size: medium; color: red; font-style: italic; text-decoration: underline;">Auto-Increment</span><br><br>
+            <hr><hr>
+            Producto<select name="Producto" id="Producto">
+                <!-- Estilo: Cuadro Rojo--> 
+                <option value="">Seleccione</option>
+                <option value="">PP01 - Rollito | 20 | Cuadro Rojo</option>
+                <option value="">PP02 - Rollito | 50 | Cuadro Rojo</option>
+                <option value="">PP03 - Rollito | 100 | Cuadro Rojo</option>
+                <option value="">PP04 - Resma | 30x30x100 | Cuadro Rojo</option>
+                <option value="">PP05 - Resma | 30x40x80 | Cuadro Rojo</option>
+                <option value="">PP06 - Rollo Jumbo | Cuadro Rojo</option>
+                <option value="">------------------------------------------------</option>
+                <!-- Estilo: Cuadro Verde--> 
+                <hr>
+                <option value="">PP07 - Rollito | 20 | Cuadro Verde</option>
+                <option value="">PP08 - Rollito | 50 | Cuadro Verde</option>
+                <option value="">PP09 - Rollito | 100 | Cuadro Verde</option>
+                <option value="">PP10 - Resma | 30x30x100 | Cuadro Verde</option>
+                <option value="">PP11 - Resma | 30x40x80 | Cuadro Verde</option>
+                <option value="">PP12 - Rollo Jumbo | Cuadro Verde</option>
+                <option value="">------------------------------------------------</option>
+                <!-- Estilo: Cuadro Negro--> 
+                <option value="">PP13 - Rollito | 20 | Cuadro Negro</option>
+                <option value="">PP14 - Rollito | 50 | Cuadro Negro</option>
+                <option value="">PP15 - Rollito | 100 | Cuadro Negro</option>
+                <option value="">PP16 - Resma | 30x30x100 | Cuadro Negro</option>
+                <option value="">PP17 - Resma | 30x40x80 | Cuadro Negro</option>
+                <option value="">PP18 - Rollo Jumbo | Cuadro Negro</option>
+
+            </select><br><br><hr><hr>
+            Producto<select name="Producto" id="Producto">
+                <!-- Estilo: Cuadro Rojo--> 
+                <option value="">Seleccione</option>
+                <option value="">PP01 - Rollito | 20</option>
+                <option value="">PP02 - Rollito | 50</option>
+                <option value="">PP03 - Rollito | 100</option>
+                <option value="">PP04 - Resma | 30x30x100</option>
+                <option value="">PP05 - Resma | 30x40x80</option>
+                <option value="">PP06 - Rollo Jumbo</option>
+            </select>&nbsp; 
+            Estilo <select name="estilo" id="estilo">
+                <option value="">Seleccione</option>
+                <option value="">Cuadro Rojo</option>
+                <option value="">Cuadro Verde</option>
+                <option value="">Cuadro Negro</option>
+                <option value="">Cuadro Amarillo</option>
+                <option value="">Diseño Hamburguesa</option>
+            </select><br>
+            <hr><hr>    
+            <label for="Unds">Unidades</label>
+            <input type="text" id="Unds" placeholder="Cantidad"><br><br>
+            <label for="Parafina Consumida">Parafina Consumida </label>
+            <input type="text" id="Parafina Consumida" placeholder="Kg"/><br><br>
+            Fecha de Registro: <span style="font-size: medium; color: red; font-style: italic; text-decoration: underline;">Fecha de Sistema</span><br><br>
+            Usuario Activo:<span style="font-size: large; color: red; font-style: italic; text-decoration: underline;">User 1</span>&nbsp;&nbsp;
+            <button>Registrar </button>
+        </form>
+    </div>
+    <br><br><hr>
+
+    <div>
+        <caption>|\ Inventario Produccion /|</caption><br><br>
+        <table style="width: 1000px;">
+            <tr> 
+                <th>id</th>
+                <th>Producto</th>
+                <th>Unidades</th>
+                <th>Parafina Consumida (Kg)</th>
+                <th>Fecha Registro</th>
+                <th>Usuario</th>
+            </tr>
+            <tr>
+                <td>IP01</td>
+                <td>PP02</td>
+                <td>4</td>
+                <td>12</td>
+                <td>26/05/2023</td>
+                <td>User 1</td>
+            </tr>
+            <tr>
+                <td>IP02</td>
+                <td>PP06</td>
+                <td>2</td>
+                <td>8</td>
+                <td>01/06/2023</td>
+                <td>User 2</td>
+            </tr>
+            <tr>
+                <td>IP03</td>
+                <td>PP03</td>
+                <td>2</td>
+                <td>11</td>
+                <td>20/05/2023</td>
+                <td>User 1</td>
+            </tr>
+             <tr>
+                <td>IP04</td>
+                <td>PP05</td>
+                <td>6</td>
+                <td>15</td>
+                <td>01/06/2023</td>
+                <td>User 3</td>
+            </tr>
+        </table>
+    </div>
+    <br><hr>
+    <div id="foot">
+        Distrinalsa S.A.S
+    </div>
+</body>
+</html>
